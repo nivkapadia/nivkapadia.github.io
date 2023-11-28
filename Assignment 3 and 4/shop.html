@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evergreen Classics</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap" rel="stylesheet">
+    <!-- This website uses fonts from https://www.fonts.googleapis.com and the design of this website is directly inspired from Thomas Frank's website. The link to his website is here: https://thomasjfrank.com/ -->
+    <header>
+        <h1><a href="index.html">Evergreen Classics</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <div>
+                <input type="text" placeholder="Search">
+            </div>
+        </nav>
+    </header>
+    <script>document.addEventListener('DOMContentLoaded', initializeStorefront);</script>
+</head>
+<body>
+    <div class="shopFilter">
+        <p>Filter by:</p>
+        <select name="filter" id="sortBy" onchange="toggleDiv()">
+            <option id="optionRecommendation" value="recomm" selected>Recommendation</option>
+            <option id="optionFiction" value="fiction">Fiction</option>
+            <option id="optionNonFiction" value="non-fiction">Non-fiction</option>
+        </select>
+    </div>
+    <div class="shop hidden" id="recomm">
+        <div class="shopRow">
+            <div class="image-box">
+                <a href="Individual Book Page/meditations.html"><img src="Images/Meditations.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/almanackNaval.html"><img src="Images/The almanack.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/alchemist.html"><img src="Images/ficiton/alchemist.avif"></a>
+            </div>
+        </div>
+        <div class="shopRow">
+            <div class="image-box">
+                <a href="Individual Book Page/stoic.html"><img src="Images/The daily stoic.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/sherlock.html"><img src="Images/ficiton/sherlock.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/bhagvadGita.html"><img src="Images/Bhagvad Gita.avif"></a>
+            </div>
+        </div>
+        <div class="shopRow">
+            <div class="image-box">
+                <a href="Individual Book Page/shane.html"><img src="Images/Clear Thinking.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/seneca.html"><img src="Images/letters from a stoic.avif"></a>
+            </div>
+        </div>
+    </div>
+    <div class="shop hidden" id="fiction">
+        <div class="shopRow">
+            <div class="image-box">
+                <a href="Individual Book Page/alchemist.html"><img src="Images/ficiton/alchemist.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/essentialCollection.html"><img src="Images/ficiton/essentialCollection.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/les.html"><img src="Images/ficiton/les miserable.avif"></a>
+            </div>
+        </div>
+        <div class="shopRow">
+            <div class="image-box">
+                <a href="Individual Book Page/sherlock.html"><img src="Images/ficiton/sherlock.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/sherlock1.html"><img src="Images/ficiton/sherlock1.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/witcher boxed set.html"><img src="Images/ficiton/witcher boxed set.avif"></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="shop hidden" id="non-fiction">
+        <div class="shopRow">
+            <div class="image-box">
+                <a href="Individual Book Page/stoic.html"><img src="Images/The daily stoic.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/tools.html"><img src="Images/Tools of Titans.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/bhagvadGita.html"><img src="Images/Bhagvad Gita.avif"></a>
+            </div>
+        </div>
+        <div class="shopRow">
+            <div class="image-box">
+                <a href="Individual Book Page/shane.html"><img src="Images/Clear Thinking.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/almanackNaval.html"><img src="Images/The almanack.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/almanackCharlie.html"><img src="Images/Poor charlie's Almanack.avif"></a>
+            </div>
+        </div>
+        <div class="shopRow">
+            <div class="image-box">
+                <a href="Individual Book Page/meditations.html"><img src="Images/Meditations.avif"></a>
+            </div>
+            <div class="image-box">
+                <a href="Individual Book Page/seneca.html"><img src="Images/letters from a stoic.avif"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+/* START OF HEADER CSS */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;600;800&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+}
+h1
+{
+    margin: 0;
+}
+h1 a
+{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 24px;
+    transition: font-size 0.5s ease-in-out;
+}   
+h1 a:hover
+{
+    font-size: 30px;
+}
+header
+{
+    text-align: center;
+    display: flex;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    padding: 30px;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav ul
+{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav li
+{
+    margin-right: 15px;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+}
+nav a
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: medium;
+    transition: font-size 0.3s ease-in-out;
+}
+nav a:hover
+{
+    color: #999;
+    font-size: larger;
+}
+input, td
+{
+    font-family: figtree, sans-serif;
+    font-weight: bold;
+} 
+input[type="text"], input[type="password"]
+{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* END OF HEADER CSS */
+
+/* START OF BODY CSS */
+.homeButton
+{
+    margin-left: 34%;
+}
+h2#home
+{
+    color: #272121;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.4em;
+    font-family: figtree, sans-serif;
+    margin: 18px;
+}
+p#home
+{
+    
+    margin: 18px;
+    font-size: 18px;
+    font-family: figtree, sans-serif;
+}
+.gridContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-gap: 10px;
+    width: 100%;
+}
+.gridChild
+{
+    margin: 10px;
+}
+.gridChild img
+{
+    margin-left: 20px;
+    transition: width 0.3s ease-in-out;
+}
+.gridChild img:hover
+{
+    width: 80%;
+}
+
+.shop
+{
+    font: 10;
+}
+.image-box
+{
+    display: flex;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #333;
+    background-color: #f8f8f8;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+}
+.image-box a{
+    height: auto;
+    display: inline-block;
+    transition: width 0.3s ease-in-out;
+}
+.image-box a:hover{
+    height: auto;
+    display: inline-block;
+    width: 75%;
+}
+.image-box img{
+    height: auto;
+    display: inline-block;
+    width: 70%;
+}
+.shopRow
+{
+    display: flex;
+    justify-content: center;
+}
+.shopFilter
+{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.shopFilter p, .shopFilter select 
+{
+    margin-left: 10px;
+}
+
+.image-box-big
+{
+    display: flex;
+    width: 450px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+    width: 30%;
+}
+.image-box-big img
+{
+    display: inline-block;
+    height: auto;
+    width: 65%;
+}
+.bookpage-div
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 7%;
+}
+.bookDetail
+{
+    margin-top: 2%;
+    font-family: figtree, sans-serif;
+    margin-left: 3%;
+    margin-right: 10%;
+    width: 70%;
+}
+.bookDetail p
+{
+    margin-top: 5px;
+}
+.titlePrice
+{
+    display: flex;
+    margin-right: 10%;
+}
+.titlePrice h1
+{
+    width: 85%;
+}
+.titlePrice h2
+{
+    text-align: right;
+    width: 5%;
+}
+.bookDetail h5
+{
+    margin-top: 10px;
+    font-size: 2em;
+}
+.buttons
+{
+    text-align: right;
+    display: flex;
+}
+input[type="button"]:hover, input[type="submit"]:hover
+{
+    background-color: #f8f8f8;
+    color: #000;
+}
+input[type="button"], input[type="submit"]
+{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(37, 69, 215);
+    font-family: figtree, sans-serif;
+    color: #fff;
+    margin-left: 5px;
+}
+table
+{
+    margin: auto;
+}
+.center {
+    justify-content: center;
+    border: 3px solid;
+    background-color: #f8f8f8;
+    height: 1.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+.hidden
+{
+    display: none;
+}
+/* .center
+{
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+} */
+/* END OF BODY CSS */
+
+/* START OF FOOTER CSS */
+
+/* END OF FOOTER CSS */
